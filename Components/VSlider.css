@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  }
+  .cards {
+    background: #9CBEBD;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+  .outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards .card {
+    background: #fff;
+    padding: 1.5rem;
+    max-width: 30rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    animation: animate 15s infinite linear;
+    animation-delay: calc(3s * var(--delay));
+  }
+  
+  .profile,
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .profile {
+    margin-bottom: 0.5rem;
+  }
+  .profile .img {
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.178);
+  }
+  .profile .img img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .profile .details {
+    margin-left: 10px;
+    white-space: normal;
+  }
+  .op-star {
+    color: #28223f;
+    font-size: 1.1rem;
+  }
+  
+  .outer:hover .card {
+    animation-play-state: paused;
+  }
+  .cards .card:last-child {
+    animation-delay: calc(-3s * var(--delay));
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+    }
+    5%,
+    20% {
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+    }
+    25%,
+    40% {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0%) scale(1);
+    }
+    45%,
+    60% {
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+    }
+    65%,
+    100% {
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+  
+  @media (max-width: 467px) {
+    /*Edited*/
+    .card {
+      font-size: 10px;
+      padding: 0.5rem !important;
+      margin: 0.5rem;
+      text-align: center;
+    }
+    .header,
+    .profile {
+      flex-direction: column;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  #card1 {
+    --delay: -1;
+  }
+  
+  #card2 {
+    --delay: 0;
+  }
+  
+  #card3 {
+    --delay: 1;
+  }
+  
+  #card4 {
+    --delay: 2;
+  }
+  
+  #card5 {
+    --delay: 2;
+  }
+  
