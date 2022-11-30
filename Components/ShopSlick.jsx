@@ -1,11 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import house02 from "../img/house02.jpg";
-import house03 from "../img/house03.jpg";
-import house04 from "../img/house04.jpg";
-import house05 from "../img/house05.jpg";
-import house06 from "../img/house06.jpg";
 
 import {} from "../Components/ShopSlick.css";
 
@@ -13,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
-  faHandMiddleFinger,
 } from "@fortawesome/free-solid-svg-icons";
 
 const ShopSlick = () => {
@@ -21,20 +15,42 @@ const ShopSlick = () => {
     infinite: true, //무한반복
     slidesToshow: 1, //한화면에 보여질 이미지
     slidesToScroll: 1, //한번에 스크롤될 이미지
-    arrow: true, //옆화살표 표시
+    //arrow: true, //옆화살표 표시
     dots: false, //아래점표시
     autoplay: true, // 자동 스크롤 사용 여부
     autoplaySpeed: 2500, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간
     pauseOnHover: true, //마우스 올리면 멈춤
-
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    
+   // nextArrow: <NextArrow />,
+   // prevArrow: <PrevArrow />,
   };
 
+  const img = [
+    { img: "house01.jpg",
+      title: "업체1",
+      desc: "설명1"},
+    { img: "house02.jpg",
+      title: "업체2",
+      desc: "설명2" },
+    { img: "house03.jpg",
+      title: "업체3",
+      desc: "설명3" }
+  ];
+
   return (
-    <div>
       <Slider {...settings}>
-        <div className="shopimg">
+        {
+          img.map((img,index)=>(
+            <div key={index} className="shopimg">
+              <img src={require(`../img/${img.img}`)} />
+              <div className="logo">
+                <h2>{img.title}</h2>
+                <p>{img.desc}</p>
+              </div>
+            </div>
+          ))
+        }
+        {/* <div className="shopimg">
           <img src={house02}></img>
         </div>
         <div className="shopimg">
@@ -48,9 +64,8 @@ const ShopSlick = () => {
         </div>
         <div className="shopimg">
           <img src={house06}></img>
-        </div>
+        </div> */}
       </Slider>
-    </div>
   );
 };
 
