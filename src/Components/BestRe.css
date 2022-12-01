@@ -10,15 +10,23 @@
   margin: 90px;
 }
 
-/* .reCard1{
-  margin-right: auto;
+.card-img-top{
+  height:300px;
+}
+
+
+.reCard1{
+  width: 500px;
+  height: 600px;
 }
 
 .reCard2{
-  float: none;
-  margin: 0 auto;
+  width: 500px;
+  height: 600px;
 }
 
 .reCard3{
-  margin-left: auto;
-} */
+  width: 500px;
+  height: 600px;
+} 
+

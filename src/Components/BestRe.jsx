@@ -20,35 +20,39 @@ function ReviewCard() {
   return (
     <div className="reviewCards">
       <div className="reCard1">
-        <Card style={{ width: "18rem", border: "none" }}>
+        <Card>
           <Card.Img variant="top" src={house06} />
           <Card.Body>
-            <Card.Title>말로 표현하기 부족해요!</Card.Title>
+            <Card.Title>Where does it come from?</Card.Title>
             <Card.Text>
-              OO인테리어를 선택한건 올해 가장 잘한 일이였어요!
+            
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
             </Card.Text>
             <Button variant="primary">후기 보러가기</Button>
           </Card.Body>
         </Card>
       </div>
       <div className="reCard2">
-        <Card style={{ width: "18rem", border: "none" }}>
+        <Card >
           <Card.Img variant="top" src={house07} />
           <Card.Body>
-            <Card.Title>남은 인생의 최고의 선택!</Card.Title>
+            <Card.Title>Where does it come from?</Card.Title>
             <Card.Text>
-              OO인테리어에 의뢰를 맡긴건 제 인생에 최고의 선택입니다!
+            
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
             </Card.Text>
             <Button variant="primary">후기 보러가기</Button>
           </Card.Body>
         </Card>
       </div>
       <div className="reCard3">
-        <Card style={{ width: "18rem", border: "none" }}>
+        <Card>
           <Card.Img variant="top" src={house04} />
           <Card.Body>
-            <Card.Title>제 통장을 가져가도 좋아요!</Card.Title>
-            <Card.Text>이런 인테리어라면 돈이 아깝지 않아요</Card.Text>
+            <Card.Title>Where does it come from?</Card.Title>
+            <Card.Text>            
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </Card.Text>
             <Button variant="primary">후기 보러가기</Button>
           </Card.Body>
         </Card>

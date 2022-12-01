@@ -20,6 +20,7 @@ const MergePage = () => {
     vertical: true,
     arrows: false,
     infinite: false,
+    draggable:false,
   };
 
   const slider = useRef(null);

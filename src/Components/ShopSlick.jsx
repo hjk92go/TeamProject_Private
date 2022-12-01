@@ -1,11 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import house02 from "../img/house02.jpg";
-import house03 from "../img/house03.jpg";
-import house04 from "../img/house04.jpg";
-import house05 from "../img/house05.jpg";
-import house06 from "../img/house06.jpg";
 
 import {} from "../Components/ShopSlick.css";
 
