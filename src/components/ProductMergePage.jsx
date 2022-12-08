@@ -18,7 +18,6 @@ const ProductMergePage = () => {
     arrows: false,
     infinite: false,
     draggable: false,
-    TouchMove: false
   };
 
   const slider = useRef(null);

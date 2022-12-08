@@ -37,9 +37,9 @@ const EstQuestion = () => {
   const [companyIndex, setCompanyIndex] = useState([]);
 
   const [totalScore, setTotalScore] = useState([
-    { id: "EI", score: 0 },
-    { id: "SN", score: 0 },
-    { id: "TF", score: 0 },
+    { id: "Aa", score: 0 },
+    { id: "Bb", score: 0 },
+    { id: "Cc", score: 0 },
   ]);
   console.log("totalScore", totalScore);
 
@@ -66,7 +66,7 @@ const EstQuestion = () => {
       // 결과페이지로 이동
       navigate({
         //  search 사용
-        pathname: "/main/estimation/result",
+        pathname: "/main/result",
         search: `?${createSearchParams({
           mbti: mbti,
         })}`,

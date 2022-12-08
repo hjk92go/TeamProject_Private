@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import { useEffect, useRef } from "react";
+import HomeNavbar from "../components/HomeNavbar";
+
+
+
 
 const Home = () => {
   const settings2 = {
@@ -44,15 +48,20 @@ const Home = () => {
         <div id="home-container2">
           <Slider className="home-main-slick" {...settings2} ref={slider}>
             <div className="home-box one"><div><HomeAboutUs /></div></div>
-            <div className="home-box two"><div className="home-slick-position"><HomePortfolio /></div></div>
-            <div className="home-box three"><div><HomeContactUs /></div></div>
+            <div className="home-box two"><div className="home-slick-position1"><HomePortfolio /></div></div>
+            <div className="home-box three"><div className="home-slick-position2"><HomeContactUs /></div></div>
           </Slider>
         </div>
       </div>
-      {/** 🌼 스크롤 이미지(?) 사라짐 확인  */}
+      {/** 🌼 스크롤 이미지(?) 사라짐 확인 😁 */}
       <div className="home-scroll-txt">Scroll</div> 
       <img src={require("../img/logo_white.png")} className="home-logo" width="170" alt="" />
-
+      
+      <div id="outer-container">
+      <HomeNavbar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+        <div id="page-wrap">
+        </div>
+      </div>
     </div>
   );
 }
